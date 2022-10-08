@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600px"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/pale_black">
+
+    <ImageView
+        android:id="@+id/mvPoster"
+        android:layout_width="400dp"
+        android:layout_height="219dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/mvTitle"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:text="MovieName"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mvRelease"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:shadowColor="#251010"
+        android:text="MovieOverview"
+        android:textAlignment="inherit"
+        android:textColor="#FFEB3B"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toBottomOf="@+id/mvTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
